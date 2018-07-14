@@ -66,6 +66,8 @@ import Upd from "./upd.svg";
 import Receipt from "./receipt.svg";
 import ReceiptReturn from "./receipt-return.svg";
 import LogoCrptTransparent from "./logo-crpt-transparent.svg";
+import CalendarIcon from "./calendar-icon.svg";
+
 
 const ICONS = {
   "add-blank": props => <AddBlank {...props} />,
@@ -133,6 +135,7 @@ const ICONS = {
   upd: props => <Upd {...props} />,
   receipt: props => <Receipt {...props} />,
   "receipt-return": props => <ReceiptReturn {...props} />,
-  "logo-crpt-transparent": props => <LogoCrptTransparent {...props} />
+  "logo-crpt-transparent": props => <LogoCrptTransparent {...props} />,
+  "calendar-icon": props => <CalendarIcon {...props} />
 };
 export { ICONS };
