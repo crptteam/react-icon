@@ -67,6 +67,8 @@ import Receipt from "./receipt.svg";
 import ReceiptReturn from "./receipt-return.svg";
 import LogoCrptTransparent from "./logo-crpt-transparent.svg";
 import CalendarIcon from "./calendar-icon.svg";
+import DownArrow from "./down-arrow.svg";
+import UpArrow from "./up-arrow.svg";
 
 
 const ICONS = {
@@ -136,6 +138,8 @@ const ICONS = {
   receipt: props => <Receipt {...props} />,
   "receipt-return": props => <ReceiptReturn {...props} />,
   "logo-crpt-transparent": props => <LogoCrptTransparent {...props} />,
-  "calendar-icon": props => <CalendarIcon {...props} />
+  "calendar-icon": props => <CalendarIcon {...props} />,
+  "down-arrow": props => <DownArrow {...props} />,
+  "up-arrow": props => <UpArrow {...props} />,
 };
 export { ICONS };
