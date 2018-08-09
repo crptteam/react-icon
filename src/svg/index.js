@@ -69,6 +69,12 @@ import LogoCrptTransparent from "./logo-crpt-transparent.svg";
 import CalendarIcon from "./calendar-icon.svg";
 import DownArrow from "./down-arrow.svg";
 import UpArrow from "./up-arrow.svg";
+import MenuHeaderFull from './menu-header-full.svg';
+import MenuHeaderFold from './menu-header-fold.svg';
+import MenuCISList from './menu-cis-list.svg';
+import MenuDocumentList from './menu-document-list.svg';
+import MenuProductList from './menu-product-list.svg';
+import MenuParticipantList from './menu-participant-list.svg';
 
 
 const ICONS = {
@@ -141,5 +147,11 @@ const ICONS = {
   "calendar-icon": props => <CalendarIcon {...props} />,
   "down-arrow": props => <DownArrow {...props} />,
   "up-arrow": props => <UpArrow {...props} />,
+  'menu-header-full': props => <MenuHeaderFull {...props} />,
+  'menu-header-fold': props => <MenuHeaderFold {...props} />,
+  'menu-cis-list': props => <MenuCISList {...props} />,
+  'menu-document-list': props => <MenuDocumentList {...props} />,
+  'menu-product-list': props => <MenuProductList {...props} />,
+  'menu-participant-list': props => <MenuParticipantList {...props} />,
 };
 export { ICONS };
