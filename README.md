@@ -10,7 +10,7 @@ Icon component. Icons keeped in svg-format.
 
 ```javascript
 
-import { Icon } from "@crpt/react-icon";
+import { Icon } from '@crpt/react-icon';
 
 <Icon type="calendar" />
 
