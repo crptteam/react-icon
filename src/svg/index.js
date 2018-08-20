@@ -75,7 +75,6 @@ import MenuCISList from "./menu-cis-list.svg";
 import MenuDocumentList from "./menu-document-list.svg";
 import MenuProductList from "./menu-product-list.svg";
 import MenuParticipantList from "./menu-participant-list.svg";
-import HeaderLogoWithText from "./header-logo-with-text.svg";
 
 const ICONS = {
   "add-blank": props => <AddBlank {...props} />,
@@ -153,6 +152,5 @@ const ICONS = {
   "menu-document-list": props => <MenuDocumentList {...props} />,
   "menu-product-list": props => <MenuProductList {...props} />,
   "menu-participant-list": props => <MenuParticipantList {...props} />,
-  "header-logo-with-text": props => <HeaderLogoWithText {...props} />
 };
 export { ICONS };
