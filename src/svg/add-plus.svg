@@ -1,0 +1,14 @@
+<svg
+        width="10"
+        height="10"
+        viewBox="0 0 10 10"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M10 6.09302V3.88372H6.10209V0H3.89791V3.88372H0V6.09302H3.89791V10H6.10209V6.09302H10Z"
+            fill="#55B5E7"
+    />
+</svg>

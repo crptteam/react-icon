@@ -75,6 +75,7 @@ import MenuCISList from "./menu-cis-list.svg";
 import MenuDocumentList from "./menu-document-list.svg";
 import MenuProductList from "./menu-product-list.svg";
 import MenuParticipantList from "./menu-participant-list.svg";
+import AddPlus from "./add-plus.svg";
 
 const ICONS = {
   "add-blank": props => <AddBlank {...props} />,
@@ -152,5 +153,6 @@ const ICONS = {
   "menu-document-list": props => <MenuDocumentList {...props} />,
   "menu-product-list": props => <MenuProductList {...props} />,
   "menu-participant-list": props => <MenuParticipantList {...props} />,
+  "add-plus": props => <AddPlus {...props} />,
 };
 export { ICONS };
