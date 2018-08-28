@@ -76,8 +76,9 @@ import MenuDocumentList from "./menu-document-list.svg";
 import MenuProductList from "./menu-product-list.svg";
 import MenuParticipantList from "./menu-participant-list.svg";
 import AddPlus from "./add-plus.svg";
-import BlackFilter from "black-filter.svg";
-import MenuOrderList from "menu-order-list.svg"
+import BlackFilter from "./black-filter.svg";
+import MenuOrderList from "./menu-order-list.svg";
+import BlackDownload from "./black-download.svg";
 
 const ICONS = {
   "add-blank": props => <AddBlank {...props} />,
@@ -158,5 +159,6 @@ const ICONS = {
   "add-plus": props => <AddPlus {...props} />,
   "black-filter": props => <BlackFilter {...props} />,
   "menu-order-list": props => <MenuOrderList {...props} />,
+  "black-download": props => <BlackDownload {...props} />,
 };
 export { ICONS };
