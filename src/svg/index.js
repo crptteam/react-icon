@@ -76,6 +76,8 @@ import MenuDocumentList from "./menu-document-list.svg";
 import MenuProductList from "./menu-product-list.svg";
 import MenuParticipantList from "./menu-participant-list.svg";
 import AddPlus from "./add-plus.svg";
+import BlackFilter from "black-filter.svg";
+import MenuOrderList from "menu-order-list.svg"
 
 const ICONS = {
   "add-blank": props => <AddBlank {...props} />,
@@ -154,5 +156,7 @@ const ICONS = {
   "menu-product-list": props => <MenuProductList {...props} />,
   "menu-participant-list": props => <MenuParticipantList {...props} />,
   "add-plus": props => <AddPlus {...props} />,
+  "black-filter": props => <BlackFilter {...props} />,
+  "menu-order-list": props => <MenuOrderList {...props} />,
 };
 export { ICONS };
