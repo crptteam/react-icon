@@ -82,6 +82,10 @@ import MenuOrderList from "./menu-order-list.svg";
 import BlackDownload from "./black-download.svg";
 import Cube3d from "./cube-3d.svg";
 import Home from "./home.svg";
+import Earth from "./earth.svg";
+import List from "./list.svg";
+
+
 
 const ICONS = {
   "add-blank": props => <AddBlank {...props} />,
@@ -166,5 +170,7 @@ const ICONS = {
   "black-download": props => <BlackDownload {...props} />,
   "cube-3d": props => <Cube3d {...props} />,
   "home": props => <Home {...props} />,
+  "earth": props => <Earth {...props} />,
+  "list": props => <List {...props} />,
 };
 export { ICONS };
