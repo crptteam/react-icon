@@ -81,6 +81,7 @@ import BlackFilter from "./black-filter.svg";
 import MenuOrderList from "./menu-order-list.svg";
 import BlackDownload from "./black-download.svg";
 import Cube3d from "./cube-3d.svg";
+import Home from "./home.svg";
 
 const ICONS = {
   "add-blank": props => <AddBlank {...props} />,
@@ -164,5 +165,6 @@ const ICONS = {
   "menu-order-list": props => <MenuOrderList {...props} />,
   "black-download": props => <BlackDownload {...props} />,
   "cube-3d": props => <Cube3d {...props} />,
+  "home": props => <Home {...props} />,
 };
 export { ICONS };
