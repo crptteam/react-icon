@@ -85,8 +85,13 @@ import Home from "./home.svg";
 import Earth from "./earth.svg";
 import List from "./list.svg";
 import Recycle from "./recycle.svg";
-
-
+import ReportTotal from "./report-total.svg";
+import ReportProductionTotal from "./report-production-total.svg";
+import ReportProductionPart from "./report-production-part.svg";
+import ReportRealizationTotal from "./report-realization-total.svg";
+import ReportRealizationPart from "./report-realization-part.svg";
+import ReportTotalVolumes from "./report-total-volumes.svg";
+import ReportRightArrow from "./report-right-arrow.svg";
 
 const ICONS = {
   "add-blank": props => <AddBlank {...props} />,
@@ -174,5 +179,13 @@ const ICONS = {
   "earth": props => <Earth {...props} />,
   "list": props => <List {...props} />,
   "recycle": props => <Recycle {...props} />,
+  "report-total": props => <ReportTotal {...props} />,
+  "report-production-total": props => <ReportProductionTotal {...props} />,
+  "report-production-part": props => <ReportProductionPart {...props} />,
+  "report-realization-total": props => <ReportRealizationTotal {...props} />,
+  "report-realization-part": props => <ReportRealizationPart {...props} />,
+  "report-total-volumes": props => <ReportTotalVolumes {...props} />,
+  "report-right-arrow": props => <ReportRightArrow {...props} />,
+
 };
 export { ICONS };
