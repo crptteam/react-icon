@@ -84,6 +84,7 @@ import Cube3d from "./cube-3d.svg";
 import Home from "./home.svg";
 import Earth from "./earth.svg";
 import List from "./list.svg";
+import Recycle from "./recycle.svg";
 
 
 
@@ -172,5 +173,6 @@ const ICONS = {
   "home": props => <Home {...props} />,
   "earth": props => <Earth {...props} />,
   "list": props => <List {...props} />,
+  "recycle": props => <Recycle {...props} />,
 };
 export { ICONS };
