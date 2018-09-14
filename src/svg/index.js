@@ -75,6 +75,7 @@ import MenuCISList from "./menu-cis-list.svg";
 import MenuDocumentList from "./menu-document-list.svg";
 import MenuProductList from "./menu-product-list.svg";
 import MenuParticipantList from "./menu-participant-list.svg";
+import MenuReport from "./menu-report.svg";
 import AddPlus from "./add-plus.svg";
 import Human2 from "./human-2.svg";
 import BlackFilter from "./black-filter.svg";
@@ -169,6 +170,7 @@ const ICONS = {
   "menu-document-list": props => <MenuDocumentList {...props} />,
   "menu-product-list": props => <MenuProductList {...props} />,
   "menu-participant-list": props => <MenuParticipantList {...props} />,
+  "menu-report": props => <MenuReport {...props} />,
   "add-plus": props => <AddPlus {...props} />,
   "human-2": props => <Human2 {...props} />,
   "black-filter": props => <BlackFilter {...props} />,
