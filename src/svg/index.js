@@ -93,6 +93,9 @@ import ReportRealizationTotal from "./report-realization-total.svg";
 import ReportRealizationPart from "./report-realization-part.svg";
 import ReportTotalVolumes from "./report-total-volumes.svg";
 import ReportRightArrow from "./report-right-arrow.svg";
+import UserMenuProfile from "./user-menu-profile.svg";
+import UserMenuQuit from "./user-menu-quit.svg";
+import NotAllowRed from "./not-allow-red.svg";
 
 const ICONS = {
   "add-blank": props => <AddBlank {...props} />,
@@ -188,6 +191,8 @@ const ICONS = {
   "report-realization-part": props => <ReportRealizationPart {...props} />,
   "report-total-volumes": props => <ReportTotalVolumes {...props} />,
   "report-right-arrow": props => <ReportRightArrow {...props} />,
-
+  "user-menu-profile": props => <UserMenuProfile {...props} />,
+  "user-menu-quit": props => <UserMenuQuit {...props} />,
+  "not-allow-red": props => <NotAllowRed {...props} />,
 };
 export { ICONS };
