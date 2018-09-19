@@ -4,6 +4,8 @@ import AddBlank from "./add-blank.svg";
 import Aggregated from "./aggregated.svg";
 import ArrowToLeft from "./arrow-to-left.svg";
 import ArrowToRight from "./arrow-to-right.svg";
+import ArrowToUp from "./arrow-to-up.svg";
+import ArrowToDown from "./arrow-to-down.svg";
 import ArrowsFromCenter from "./arrows-from-center.svg";
 import ArrowsToCenter from "./arrows-to-center.svg";
 import BoxOnLoader from "./box-on-loader.svg";
@@ -102,6 +104,8 @@ const ICONS = {
   aggregated: props => <Aggregated {...props} />,
   "arrow-to-left": props => <ArrowToLeft {...props} />,
   "arrow-to-right": props => <ArrowToRight {...props} />,
+  "arrow-to-down": props => <ArrowToDown {...props} />,
+  "arrow-to-up": props => <ArrowToUp {...props} />,
   "arrows-from-center": props => <ArrowsFromCenter {...props} />,
   "arrows-to-center": props => <ArrowsToCenter {...props} />,
   "box-on-loader": props => <BoxOnLoader {...props} />,
