@@ -78,6 +78,8 @@ import MenuDocumentList from "./menu-document-list.svg";
 import MenuProductList from "./menu-product-list.svg";
 import MenuParticipantList from "./menu-participant-list.svg";
 import MenuReport from "./menu-report.svg";
+import MenuPacman from "./menu-pacman.svg";
+import MenuRegistry from "./menu-registry.svg";
 import AddPlus from "./add-plus.svg";
 import Human2 from "./human-2.svg";
 import BlackFilter from "./black-filter.svg";
@@ -99,6 +101,7 @@ import UserMenuProfile from "./user-menu-profile.svg";
 import UserMenuQuit from "./user-menu-quit.svg";
 import NotAllowRed from "./not-allow-red.svg";
 import CrossRed from "./cross-red.svg";
+
 
 const ICONS = {
   "add-blank": props => <AddBlank {...props} />,
@@ -179,6 +182,8 @@ const ICONS = {
   "menu-product-list": props => <MenuProductList {...props} />,
   "menu-participant-list": props => <MenuParticipantList {...props} />,
   "menu-report": props => <MenuReport {...props} />,
+  "menu-pacman": props => <MenuPacman {...props} />,
+  "menu-registry": props => <MenuRegistry {...props} />,
   "add-plus": props => <AddPlus {...props} />,
   "human-2": props => <Human2 {...props} />,
   "black-filter": props => <BlackFilter {...props} />,
