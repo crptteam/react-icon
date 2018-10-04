@@ -101,7 +101,7 @@ import UserMenuProfile from "./user-menu-profile.svg";
 import UserMenuQuit from "./user-menu-quit.svg";
 import NotAllowRed from "./not-allow-red.svg";
 import CrossRed from "./cross-red.svg";
-
+import Path from "./path.svg";
 
 const ICONS = {
   "add-blank": props => <AddBlank {...props} />,
@@ -205,5 +205,6 @@ const ICONS = {
   "user-menu-quit": props => <UserMenuQuit {...props} />,
   "not-allow-red": props => <NotAllowRed {...props} />,
   "cross-red": props => <CrossRed {...props} />,
+  "pass": props => <Path {...props} />,
 };
 export { ICONS };
