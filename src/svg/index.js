@@ -205,6 +205,6 @@ const ICONS = {
   "user-menu-quit": props => <UserMenuQuit {...props} />,
   "not-allow-red": props => <NotAllowRed {...props} />,
   "cross-red": props => <CrossRed {...props} />,
-  "pass": props => <Path {...props} />,
+  "path": props => <Path {...props} />,
 };
 export { ICONS };
