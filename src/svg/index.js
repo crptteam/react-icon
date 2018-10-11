@@ -99,6 +99,13 @@ import ReportTotalVolumes from "./report-total-volumes.svg";
 import ReportRightArrow from "./report-right-arrow.svg";
 import UserMenuProfile from "./user-menu-profile.svg";
 import UserMenuQuit from "./user-menu-quit.svg";
+
+import HelpAddHuman from "./help-add-human.svg";
+import HelpAddProduct from "./help-add-product.svg";
+import HelpOrderCode from "./help-order-code.svg";
+import HelpShowData from "./help-show-data.svg";
+import HelpQuestion from "./help-question.svg";
+
 import NotAllowRed from "./not-allow-red.svg";
 import CrossRed from "./cross-red.svg";
 import Path from "./path.svg";
@@ -203,6 +210,11 @@ const ICONS = {
   "report-right-arrow": props => <ReportRightArrow {...props} />,
   "user-menu-profile": props => <UserMenuProfile {...props} />,
   "user-menu-quit": props => <UserMenuQuit {...props} />,
+  "help-add-human": props => <HelpAddHuman {...props} />,
+  "help-add-product": props => <HelpAddProduct {...props} />,
+  "help-order-code": props => <HelpOrderCode {...props} />,
+  "help-show-data": props => <HelpShowData {...props} />,
+  "help-question": props => <HelpQuestion {...props} />,
   "not-allow-red": props => <NotAllowRed {...props} />,
   "cross-red": props => <CrossRed {...props} />,
   "path": props => <Path {...props} />,
