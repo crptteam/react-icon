@@ -12,9 +12,11 @@
     "src"
   ],
   "scripts": {
-    "build": "npx @svgr/cli --icon -d src/svg/converted src/svg && nwb build-react-component --copy-files",
+    "convertSvgs": "npx @svgr/cli --icon -d src/components/svgComponents src/svg",
+    "cleanSvgFolder": "node scripts/deleteSvg.js",
+    "build": "npm run convertSvgs && npm run cleanSvgFolder && nwb build-react-component --copy-files",
     "clean": "nwb clean-module && nwb clean-demo",
-    "start": "npx @svgr/cli --icon -d src/svg/converted src/svg && nwb serve-react-demo",
+    "start": "npm run convertSvgs && npm run cleanSvgFolder && nwb serve-react-demo",
     "test": "NODE_ENV=test jest -u --no-cache",
     "test:coverage": "NODE_ENV=test jest --coverage",
     "test:watch": "NODE_ENV=test jest --watch"

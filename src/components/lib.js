@@ -3,7 +3,7 @@ import { kebabCase } from 'lodash';
 
 export const getIconsAsObject = () => {
   const iconsObject = {};
-  const iconsMap = require.context('../svg/converted', true, /\.js/);
+  const iconsMap = require.context('./svgComponents', true, /\.js/);
   iconsMap.keys().forEach(filename => {
     /* filename is like './smthSmth.js' */
     const cleanFileName =

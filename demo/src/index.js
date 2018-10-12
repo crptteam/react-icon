@@ -10,7 +10,7 @@ class Demo extends Component {
     const RandomIcon = Icon.svgIconsAsComponents['emitted'];
 
     const iconNameList = [];
-    const icons = require.context('../../src/svg/converted', true, /\.js/);
+    const icons = require.context('../../src/components/svgComponents', true, /\.js/);
     icons.keys().forEach(filename => {
       /* filename is like './smthSmth.js' */
       const cleanFileName =
@@ -28,7 +28,7 @@ class Demo extends Component {
         <h1>react-icon Demo</h1>
         {iconNameList.map(type => (
           <div key={type}>
-            <Icon type={type} style={{fill: "#000"}}/>
+            <Icon type={type} fill="#333333" withoutMask />
             {" - "}{type}
           </div>
         ))}

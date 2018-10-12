@@ -39,7 +39,7 @@ import { Icon } from "@crpt/react-icon";
 ```
 
 ## How to add the icon.
-  Just copy svg icon to src/svg folder and make 
+  Just copy svg icon to src/svg folder and make. 
 ```javascript
   npm run build
 ```
@@ -47,7 +47,8 @@ or
 ```javascript
   npm start
 ```
-
+ Icon will be converted to React Component and moved to src/svgComponents folder.
+ 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
 
