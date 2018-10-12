@@ -1,15 +1,24 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
+import styled from 'styled-components';
+import { kebabCase } from 'lodash';
+import PropTypes from 'prop-types';
 import { withTheme } from "styled-components";
+
+import { getIconsAsObject } from './lib';
 
 import Wrapper from "../styled/Wrapper";
 
-import { ICONS } from "../svg";
 
 class Icon extends Component {
+  static get svgIconsAsComponents () {
+    return {...getIconsAsObject()};
+  };
+
   constructor(props) {
     super(props);
     this.displayName = "Icon";
+    this.iconList = {};
+    this.iconList = {...getIconsAsObject()};
   }
 
   render() {
@@ -20,14 +29,22 @@ class Icon extends Component {
       spacingLeft,
       spacingRight,
       size,
+      withoutMask,
       ...otherProps
     } = this.props;
 
     if (!type || !type.length) return null;
+    const Icon = this.iconList[type];
+    if (!Icon) {
+      console.log('ICON. Error. Couldn\'t find icon type = ', type);
+      return null;
+    }
 
-    const Icon = ICONS[type];
+    const StyledIcon = styled(Icon)`
+      * { mask: none; }
+    `;
 
-    if (!Icon) return null;
+    const IconComponent = withoutMask ? StyledIcon : Icon;
 
     return (
       <Wrapper
@@ -36,11 +53,11 @@ class Icon extends Component {
         spacingRight={spacingRight}
         disabled={disabled}
       >
-        <Icon
-          width={size ? size + "px" : undefined}
-          height={size ? size + "px" : undefined}
+        <IconComponent
+          {...(size ? { width: `${size}px`, height: `${size}px` } : null) }
           {...otherProps}
         />
+
       </Wrapper>
     );
   }

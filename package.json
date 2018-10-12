@@ -1,6 +1,6 @@
 {
   "name": "@crpt/react-icon",
-  "version": "1.0.42",
+  "version": "1.1.0",
   "description": "react-icon React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -12,9 +12,9 @@
     "src"
   ],
   "scripts": {
-    "build": "nwb build-react-component --copy-files",
+    "build": "npx @svgr/cli --icon -d src/svg/converted src/svg && nwb build-react-component --copy-files",
     "clean": "nwb clean-module && nwb clean-demo",
-    "start": "nwb serve-react-demo",
+    "start": "npx @svgr/cli --icon -d src/svg/converted src/svg && nwb serve-react-demo",
     "test": "NODE_ENV=test jest -u --no-cache",
     "test:coverage": "NODE_ENV=test jest --coverage",
     "test:watch": "NODE_ENV=test jest --watch"
@@ -23,6 +23,7 @@
     "access": "public"
   },
   "dependencies": {
+    "lodash": "^4.17.11",
     "styled-components": "1.4.6 - 3"
   },
   "peerDependencies": {
@@ -57,11 +58,12 @@
   },
   "contributors": [
     "Nikita Solomennikov",
-    "Alexander Berezovsky"
+    "Alexander Berezovsky",
+    "Aleksey Zakharov"
   ],
-  "homepage": "https://github.com/crptteam/react-breadcrumbs",
+  "homepage": "https://github.com/crptteam/react-icon",
   "license": "MIT",
-  "repository": "https://github.com/crptteam/react-breadcrumbs",
+  "repository": "https://github.com/crptteam/react-icon",
   "keywords": [
     "react-component"
   ],
