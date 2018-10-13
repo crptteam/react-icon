@@ -1,6 +1,6 @@
 {
   "name": "@crpt/react-icon",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "react-icon React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -14,9 +14,9 @@
   "scripts": {
     "convertSvgs": "npx @svgr/cli --icon -d src/components/svgComponents src/svg",
     "cleanSvgFolder": "node scripts/deleteSvg.js",
-    "build": "npm run convertSvgs && npm run cleanSvgFolder && nwb build-react-component --copy-files",
+    "build": "npm run convertSvgs; npm run cleanSvgFolder; nwb build-react-component --copy-files",
     "clean": "nwb clean-module && nwb clean-demo",
-    "start": "npm run convertSvgs && npm run cleanSvgFolder && nwb serve-react-demo",
+    "start": "npm run convertSvgs; npm run cleanSvgFolder; nwb serve-react-demo",
     "test": "NODE_ENV=test jest -u --no-cache",
     "test:coverage": "NODE_ENV=test jest --coverage",
     "test:watch": "NODE_ENV=test jest --watch"
