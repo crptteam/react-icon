@@ -1,6 +1,6 @@
 {
   "name": "@crpt/react-icon",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "react-icon React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -62,7 +62,8 @@
   "contributors": [
     "Nikita Solomennikov",
     "Alexander Berezovsky",
-    "Aleksey Zakharov"
+    "Aleksey Zakharov",
+    "Ivan Oshchepkov"
   ],
   "homepage": "https://github.com/crptteam/react-icon",
   "license": "MIT",
