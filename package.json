@@ -17,6 +17,7 @@
     "build": "npm run convertSvgs; npm run cleanSvgFolder; nwb build-react-component --copy-files",
     "clean": "nwb clean-module && nwb clean-demo",
     "start": "npm run convertSvgs; npm run cleanSvgFolder; nwb serve-react-demo",
+    "storybook": "start-storybook -p 9000 -c .storybook",
     "test": "NODE_ENV=test jest -u --no-cache",
     "test:coverage": "NODE_ENV=test jest --coverage",
     "test:watch": "NODE_ENV=test jest --watch"
@@ -33,6 +34,8 @@
     "react": "16.x"
   },
   "devDependencies": {
+    "@storybook/addon-knobs": "^4.0.4",
+    "@storybook/react": "^4.0.4",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.2",
@@ -57,7 +60,8 @@
     "nwb": "0.21.x",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-test-renderer": "^16.4.0"
+    "react-test-renderer": "^16.4.0",
+    "storybook": "^1.0.0"
   },
   "contributors": [
     "Nikita Solomennikov",
