@@ -18,6 +18,7 @@
     "clean": "nwb clean-module && nwb clean-demo",
     "start": "npm run convertSvgs; npm run cleanSvgFolder; nwb serve-react-demo",
     "storybook": "start-storybook -p 9000 -c .storybook",
+    "deploy-storybook": "storybook-to-ghpages",
     "test": "NODE_ENV=test jest -u --no-cache",
     "test:coverage": "NODE_ENV=test jest --coverage",
     "test:watch": "NODE_ENV=test jest --watch"
@@ -36,6 +37,7 @@
   "devDependencies": {
     "@storybook/addon-knobs": "^4.0.4",
     "@storybook/react": "^4.0.4",
+    "@storybook/storybook-deployer": "^2.3.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.2",
