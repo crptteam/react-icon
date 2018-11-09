@@ -20,7 +20,7 @@ elements.add('All', () => {
 
   return (
     <div>
-      {iconNameList.map((name) => <div><Icon type={name}/> - {name}</div>)}
+      {iconNameList.map((name) => <div><Icon type={name} fill="black"/> - {name}</div>)}
     </div>
   );
 });
