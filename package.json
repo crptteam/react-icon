@@ -68,7 +68,9 @@
   "contributors": [
     "Nikita Solomennikov",
     "Alexander Berezovsky",
-    "Aleksey Zakharov"
+    "Aleksey Zakharov",
+    "Ivan Oshchepkov",
+    "Artem Kuskis"
   ],
   "homepage": "https://github.com/crptteam/react-icon",
   "license": "MIT",
