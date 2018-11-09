@@ -1,26 +1,20 @@
 import React from 'react';
-import { kebabCase } from "lodash";
 import { storiesOf } from '@storybook/react';
 import { withKnobs, number } from '@storybook/addon-knobs';
 
 import Icon from '../components/Icon';
+import { getIconsAsObject } from "../components/lib";
 
 const elements = storiesOf('Icon', module);
 
 elements.addDecorator(withKnobs);
 
 elements.add('All', () => {
-  const iconNameList = [];
-  const icons = require.context('../components/svgComponents', true, /\.js/);
-  icons.keys().forEach(filename => {
-    // filename is like './smthSmth.js'
-    const cleanFileName = filename.split('').slice(2, -3).join('');   //cleanFileName = smthSmth
-        iconNameList.push(kebabCase(cleanFileName));  //name = 'smth-smth'
-  });
+  const icons = Object.keys(getIconsAsObject());
 
   return (
     <div>
-      {iconNameList.map((name) => <div><Icon type={name} fill="black"/> - {name}</div>)}
+      {icons.map((name, value) => <div><Icon type={name} fill="black"/> - {name}</div>)}
     </div>
   );
 });
