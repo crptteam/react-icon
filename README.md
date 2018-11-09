@@ -3,6 +3,7 @@
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
+[![Storybook][storybook-badge]][storybook]
 
 Icon component. Icons keeped in svg-format.
 
@@ -57,3 +58,6 @@ or
 
 [coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
 [coveralls]: https://coveralls.io/github/user/repo
+
+[storybook-badge]: https://github.com/storybooks/press/blob/master/badges/storybook.svg
+[storybook]: https://crptteam.github.io/react-icon
