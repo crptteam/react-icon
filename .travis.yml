@@ -18,12 +18,14 @@ branches:
     - master
 
 deploy:
-  provider: npm
-  skip_cleanup: true
-  email: nikitosgroover@gmail.com
-  api_key: $NPM_TOKEN
-  tag: latest
-  on:
-    repo: crptteam/react-icon
-
-
+  - provider: script
+    script: bash npm run deploy-storybook -- --ci
+    on:
+      repo: crptteam/react-icon
+  - provider: npm
+    skip_cleanup: true
+    email: nikitosgroover@gmail.com
+    api_key: $NPM_TOKEN
+    tag: latest
+    on:
+      repo: crptteam/react-icon
