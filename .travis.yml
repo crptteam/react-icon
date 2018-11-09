@@ -18,10 +18,6 @@ branches:
     - master
 
 deploy:
-  - provider: script
-    script: bash npm run deploy-storybook -- --ci
-    on:
-      repo: crptteam/react-icon
   - provider: npm
     skip_cleanup: true
     email: nikitosgroover@gmail.com
