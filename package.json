@@ -63,7 +63,8 @@
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-test-renderer": "^16.4.0",
-    "storybook": "^1.0.0"
+    "storybook": "^1.0.0",
+    "storybook-addon-styled-component-theme": "^1.1.0"
   },
   "contributors": [
     "Nikita Solomennikov",

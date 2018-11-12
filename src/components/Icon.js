@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styled from 'styled-components';
-import { kebabCase } from 'lodash';
 import PropTypes from 'prop-types';
 import { withTheme } from "styled-components";
 
@@ -17,7 +16,6 @@ class Icon extends Component {
   constructor(props) {
     super(props);
     this.displayName = "Icon";
-    this.iconList = {};
     this.iconList = {...getIconsAsObject()};
   }
 

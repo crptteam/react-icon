@@ -17,6 +17,13 @@ branches:
   only:
     - master
 
+jobs:
+  include:
+    - stage: Storybook
+      # required to have GH_TOKEN in environment variables
+      if: (branch = master AND NOT type = pull_request)
+      script: npm run deploy-storybook -- --ci
+
 deploy:
   - provider: npm
     skip_cleanup: true
