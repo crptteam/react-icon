@@ -5,7 +5,9 @@
 [![Coveralls][coveralls-badge]][coveralls]
 [![Storybook][storybook-badge]][storybook]
 
-Icon component. Icons keeped in svg-format.
+Icon component. Icons are kept in svg-format.
+
+To see demonstration of this component, follow this link: [![Storybook][storybook-badge]][storybook].
 
 ## Usage
 
