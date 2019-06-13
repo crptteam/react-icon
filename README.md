@@ -41,7 +41,7 @@ import { Icon } from "@crpt/react-icon";
   <IconComponent {some props} />
 ```
 
-## How to add the icon.
+## How to add the icon
   Just copy svg icon to src/svg folder and make. 
 ```javascript
   npm run build
