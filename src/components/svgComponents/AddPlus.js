@@ -1,11 +1,13 @@
 import React from "react";
 
 const SvgAddPlus = props => (
-  <svg viewBox="0 0 10 10" fill="#55B5E7" width="1em" height="1em" {...props}>
-    <path
-      d="M10 6.093v-2.21H6.102V0H3.898v3.884H0v2.209h3.898V10h2.204V6.093H10z"
-    />
-  </svg>
+    <svg fill="none" height={12} width={12} {...props}>
+        <path
+            clipRule="evenodd"
+            d="M6 .757a1 1 0 0 1 1 1V5h3.243a1 1 0 1 1 0 2H7v3.243a1 1 0 1 1-2 0V7H1.758a1 1 0 1 1 0-2H5V1.757a1 1 0 0 1 1-1z"
+            fillRule="evenodd"
+        />
+    </svg>
 );
 
 export default SvgAddPlus;
